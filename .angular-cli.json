@@ -20,6 +20,7 @@
       "prefix": "cv",
       "styles": [
         "styles.scss",
+        "../src/assets/fonts/icons/style.css",
         "../node_modules/wowjs/css/libs/animate.css"
       ],
       "scripts": [

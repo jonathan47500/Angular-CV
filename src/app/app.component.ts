@@ -1,4 +1,6 @@
+//AngularModules
 import { Component } from '@angular/core';
+//InternalModules
 import { environment } from "../environments/environment";
 
 @Component({

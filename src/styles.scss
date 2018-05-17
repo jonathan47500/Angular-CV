@@ -1,2 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import './styles-declarations.scss';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+/* Change bootstrap color */
+.text-primary {
+    color: $color-primary !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $color-primary !important;
+    border: none !important;
+}
+
+.btn-primary:hover, .open > .dropdown-toggle.btn-primary {
+    background-color: $color-primary-dark !important;
+}
+ 
+.btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: $color-primary-dark !important;
+    box-shadow: 0 0 0 0.2rem $color-primary-transparent !important;
+}

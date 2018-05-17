@@ -12,4 +12,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  downloadCV() {
+    console.log("téléchargement du cv");
+  }
+
+  scrollToAboutMe() {
+    console.log("about me");
+  }
 }

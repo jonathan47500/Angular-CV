@@ -1,4 +1,6 @@
+//AngularModules
 import {Routes} from '@angular/router';
+//InternalModules
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 
 export const app_routes: Routes = [
