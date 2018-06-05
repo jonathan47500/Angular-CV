@@ -2,6 +2,9 @@
 @import './styles-declarations.scss';
 @import "~bootstrap/dist/css/bootstrap.css";
 
+body {
+    min-width: 360px;
+}
 
 /* Change bootstrap color */
 .text-primary {

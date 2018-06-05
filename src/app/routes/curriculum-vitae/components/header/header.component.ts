@@ -13,10 +13,8 @@ export class HeaderComponent implements OnInit {
   }
 
   downloadCV() {
-    console.log("téléchargement du cv");
   }
 
   scrollToAboutMe() {
-    console.log("about me");
   }
 }

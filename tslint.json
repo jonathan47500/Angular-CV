@@ -113,12 +113,14 @@
       true,
       "attribute",
       "app",
+      "cv",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
       "app",
+      "cv",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

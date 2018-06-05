@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="navbar-container">
+    <cv-navbar-hamburger 
+      class="d-block d-sm-none" 
+      [isOpen]=isOpen
+      (open)="onOpen($event)"
+      (close)="onClose($event)">
+    </cv-navbar-hamburger>
+    <ul class="navbar-nav d-none d-sm-block">
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="navbar-nav-popup" [ngClass]="{'is-open': !isOpen}">
+  <li class="nav-item">
+    <a class="nav-link" href="#"></a>
+  </li>
+</div>

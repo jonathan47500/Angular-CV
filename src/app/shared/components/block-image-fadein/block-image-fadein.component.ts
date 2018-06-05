@@ -1,6 +1,6 @@
-//AngularModules
-import { Component, OnInit, Input } from '@angular/core';
-//ExternalModules
+// AngularModules
+import { AfterViewInit, Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+// ExternalModules
 import { WOW } from 'wowjs/dist/wow.min';
 
 @Component({
@@ -8,30 +8,29 @@ import { WOW } from 'wowjs/dist/wow.min';
   templateUrl: './block-image-fadein.component.html',
   styleUrls: ['./block-image-fadein.component.scss']
 })
-export class BlockImageFadeinComponent implements OnInit {
+export class BlockImageFadeinComponent implements OnInit, AfterViewInit {
   @Input() firstName: string;
   @Input() lastName: string;
   @Input() job: string;
   @Input() imageBackground: string;
   @Input() buttonOneName: string;
   @Input() buttonTwoName: string;
-  @Input() buttonOneFunction: Function;
-  @Input() buttonTwoFunction: Function;
-  @Input() shadow: boolean;
-  
+  @Output() buttonOneFunction: EventEmitter<any> = new EventEmitter();
+  @Output() buttonTwoFunction: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() { }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     new WOW().init();
   }
 
   functionButtonOne() {
-    this.buttonOneFunction();
+    this.buttonOneFunction.emit(null);
   }
 
   functionButtonTwo() {
-    this.buttonTwoFunction();
+    this.buttonTwoFunction.emit(null);
   }
 }

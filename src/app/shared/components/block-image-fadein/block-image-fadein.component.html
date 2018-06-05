@@ -1,9 +1,9 @@
-<div class="block-image-fadein">
-  <div class="block-image-fadein_background" [ngStyle]="{'background-image': 'url('+imageBackground+')'}" [ngClass]="{'box-shadow': shadow}">
-    <div class="block-image-fadein_black_cover d-flex flex-column align-items-center justify-content-center wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
-      <div *ngIf="firstName || lastName" class="block-image-fadein_title wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">{{firstName}} <span class="text-primary">{{lastName}}</span></div>
-      <div *ngIf="job" class="block-image-fadein_subtitle wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">{{job}}</div>
-      <div *ngIf="(buttonOneName && buttonOneFunction) || (buttonTwoName && buttonOneFunction)" class="block-image-fadein_actions wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" >
+<div id="block-image-fadein">
+  <div id="block-image-fadein_background" [ngStyle]="{'background-image': 'url('+imageBackground+')'}">
+    <div id="block-image-fadein_black_cover" class="d-flex flex-column align-items-center justify-content-center wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
+      <div *ngIf="firstName || lastName" id="block-image-fadein_title" class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">{{firstName}} <span class="text-primary">{{lastName}}</span></div>
+      <div *ngIf="job" id="block-image-fadein_subtitle" class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">{{job}}</div>
+      <div *ngIf="(buttonOneName && buttonOneFunction) || (buttonTwoName && buttonOneFunction)" id="block-image-fadein_actions" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" >
         <button *ngIf="buttonOneName && buttonOneFunction" type="button" class="btn btn-primary" (click)="functionButtonOne()">{{buttonOneName}}</button>
         <button *ngIf="buttonTwoName && buttonOneFunction" type="button" class="btn btn-secondary" (click)="functionButtonTwo()">{{buttonTwoName}}</button>
       </div>

@@ -1,51 +1,45 @@
 @import '../../../../styles-declarations.scss';
 
-.block-image-fadein {
+#block-image-fadein {
     height: 600px;
     width: 100%;
     position: relative;
     overflow: hidden;
-    perspective: 320px;
-
-    .block-image-fadein_background {
+    
+    #block-image-fadein_background {
         width: 100%;
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;  
         
-        &.box-shadow {
-            -webkit-box-shadow: inset 0px 10px 30px -15px rgba(0,0,0,0.8), inset 0px -10px 30px -15px rgba(0,0,0,0.8);
-            -moz-box-shadow: inset 0px 10px 30px -15px rgba(0,0,0,0.8), inset 0px -10px 30px -15px rgba(0,0,0,0.8);
-            box-shadow: inset 0px 10px 30px -15px rgba(0,0,0,0.8), inset 0px -10px 30px -15px rgba(0,0,0,0.8);
-        }
-        
-        .block-image-fadein_black_cover {
+        #block-image-fadein_black_cover {
             width: 100%;
             height: 100%;
             opacity: hidden;
+            text-align: center;
             background-color: $color-dark-grey-transparent;
 
-            .block-image-fadein_title {
+            #block-image-fadein_title {
                 color: $color-dark-grey;
                 font-size: 40px;
                 font-family: 'Roboto';
                 letter-spacing: 6px;
                 text-transform: uppercase;
-                text-align: center;
+                margin-top: 115px;
 
                 span {
                     color: $color-grey;
                 }
             }
 
-            .block-image-fadein_subtitle {
+            #block-image-fadein_subtitle {
                 color: $color-grey;                
                 font-size: 17px;
                 font-family: 'Roboto';
             }
 
-            .block-image-fadein_actions {
+            #block-image-fadein_actions {
                 margin-top: 35px;
 
                 .btn {

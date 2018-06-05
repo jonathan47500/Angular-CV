@@ -1,7 +1,7 @@
-//AngularModules
+// AngularModules
 import { Component } from '@angular/core';
-//InternalModules
-import { environment } from "../environments/environment";
+// InternalModules
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'cv-root',
